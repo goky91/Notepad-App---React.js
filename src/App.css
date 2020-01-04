@@ -1,0 +1,60 @@
+.note {
+    width: 400px;
+    height: 700px;
+    max-height: 900px;
+    background-color: rgb(43, 173, 206);
+    display: block;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 10px solid grey;
+    border-bottom: 80px solid grey;
+}
+
+.note__header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.42);
+}
+
+.note__header button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+    float: right;
+    display: block;
+}
+
+.note__header input {
+    width: 80%;
+    height: 40px;
+    opacity: 0.7;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: block;
+    margin: 15px auto;
+    padding: 0 10px;
+}
+
+#note__body {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.note-body__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    width: 100%;
+    border-bottom: 1px inset gainsboro;
+    color: white;
+    padding: 5px;
+}
+.note-body__item button {
+    align-self: flex-end;
+    border-radius: 50%;
+    border: none;
+    padding: 2px 5px;
+}
