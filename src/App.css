@@ -52,9 +52,21 @@
     color: white;
     padding: 5px;
 }
+
+.note-body__item label {
+    display: inline-block;
+    word-break: break-all;
+    font-weight: 500;
+}
+
 .note-body__item button {
-    align-self: flex-end;
+    align-self: center;
     border-radius: 50%;
     border: none;
     padding: 2px 5px;
+}
+
+.js-checked {
+    text-decoration: line-through;
+    color: #ffffffad;
 }
