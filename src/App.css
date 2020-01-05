@@ -57,6 +57,7 @@
     display: inline-block;
     word-break: break-all;
     font-weight: 500;
+    max-width: 80%;
 }
 
 .note-body__item button {
@@ -64,6 +65,8 @@
     border-radius: 50%;
     border: none;
     padding: 2px 5px;
+    position: absolute;
+    right: 70px;
 }
 
 .js-checked {

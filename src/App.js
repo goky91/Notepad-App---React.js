@@ -22,11 +22,18 @@ class App extends Component {
     }
   }
 
+  deleteItem = (index) => {
+      this.state.inputsList.splice(index, 1);
+      this.setState({
+        inputsList: this.state.inputsList
+      });
+  }
+
   render() {
 
     const renderLists = this.state.inputsList.map( (item, index)=>{
       return (
-          <ListItem key={index} name={index}  label={item} />
+          <ListItem key={index} name={index}  label={item} deleteItem={()=>{this.deleteItem(index)} } />
       );
     });
 

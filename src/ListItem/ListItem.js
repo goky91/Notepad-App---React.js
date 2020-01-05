@@ -14,12 +14,16 @@ class ListItem extends Component {
         }
     }
 
+    deleteListItem = () => {
+
+    }
+
     render() {
         return (
             <div className="note-body__item">
                 <input onClick={this.checkboxHandler} name={this.props.name} type="checkbox"></input>
                 <label className={this.state.checked} htmlFor={this.props.name}> {this.props.label} </label>
-                <button>X</button>
+                <button onClick={this.props.deleteItem}>X</button>
             </div>
         );
     }
